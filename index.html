@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-nunito">
+    <!-- header section -->
+    <div
+      class="lg:h-screen h-[50vh] bg-gradient-to-t from-indigo-200 relative overflow-hidden dark:from-slate-800 dark:to-slate-900"
+    >
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <div
+          class="max-w-7xl mx-auto py-1 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-10 flex justify-between"
+        >
+          <div class="flex items-center">
+            <img
+              class="top-0 w-10 h-16 object-contain"
+              src="./images/drago-Photoroom.png"
+              alt="logo"
+            />
+            <span class="text-lg font-bold text-indigo-500 dark:text-white">Drago.</span>
+          </div>
+          <ul
+            class="hidden md:flex items-center space-x-10 text-gray-600 font-bold text-sm uppercase dark:text-gray-100"
+          >
+            <li class="hover:text-gray-400"><a href="#homepage">Home Page</a></li>
+            <li class="hover:text-gray-400"><a href="#about">About Me</a></li>
+            <li class="hover:text-gray-400"><a href="#services">Services</a></li>
+            <!-- <li class="hover:text-gray-400"><a href="#">Works</a></li> -->
+            <li class="hover:text-gray-400"><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="hidden md:block">
+            <img id="moonToggle" class="w-5 mt-5 cursor-pointer" src="./images/moon.png" alt="" />
+          </div>
+          <div
+            id="hamburger"
+            class="flex flex-col justify-center gap-y-1 block md:hidden cursor-pointer z-20"
+          >
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center "
+          >
+            <li><a  id="hlink"  href="#homepage">Home Page</a></li>
+            <li><a  id="hlink" href="#about">About Me</a></li>
+            <li><a  id="hlink" href="#services">Services</a></li>
+            <!-- <li><a href="#"></a></li> -->
+            <li><a  id="hlink" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intocontent -->
+
+      <!-- image -->
+      <img 
+        class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 mx-auto"
+        src="./images/Adobe Express - file.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 w-big h-big rounded-full left-0 right-0 mx-auto bg-indigo-900 -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-6 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-grey-600">Freelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- texts -->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 dark:bg-slate-900 dark:shadow-slate-800"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Surya</h1>
+        <p class="text-gray-400">
+          I architect experiences, not just interfaces. Self-taught.
+          Battle-tested. Future-focused. <br />
+          Whether it's a <em>pixel-perfect frontend</em> or a
+          <strong>robust backend</strong>, I build with purpose.<br />
+          Welcome to my digital lab — where ideas turn into interactive reality.
+          🧪✨
+        </p>
+        <a class="bg-indigo-600 text-white text-xl px-3 py-2 w-fit" href=""
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about  -->
+    
+    <div id="about">
+      <div class="container mx-auto py-40  flex flex-col-reverse lg:flex-row gap-20 items-center px-10 dark:bg-slate-900">
+          <!-- left -->
+          <div class="relative">
+            <img
+              class="h-1/4 w-1/4 absolute top-0 left-0 -z-10"
+              src="./images/dots.png"
+              alt=""
+            />
+            <div class="h-full rounded-full overflow-hidden">
+              <img src="./images/resized_image.jpg" alt="" />
+            </div>
+          </div>
+          <!-- right -->
+          <div class="my-auto flex flex-col gap-3">
+            <h1 class="text-indigo-600 font-bold">About Me</h1>
+            <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+            <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
+            <p class="text-gray-400">Aspiring full-stack developer with a strong foundation in HTML, CSS, and JavaScript, currently diving into backend development. <br> Passionate about building clean, user-friendly web applications and always eager to learn and grow.</p>
+            <h2 class="text-gray-400 font-medium">HTML</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+              <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h2 class="text-gray-400 font-medium">CSS</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+              <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h2 class="text-gray-400 font-medium">JAVASCRIPT</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+              <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+     
+     <div id="services" class=" dark:bg-slate-900">
+      <div class="container mx-auto">
+<!-- top -->
+ <div class="flex flex-col gap-3 items-center">
+    <h1 class="text-indigo-600 font-bold">Services</h1>
+    <h1 class="text-3xl dark:text-white">What Do I Offer</h1>
+     <p class="text-gray-400 w-1/2 text-center">I offer clean, responsive web development with a focus on user experience, performance, and modern design—along with a strong commitment to learning and continuous improvement.</p>
+    </div>
+<!-- bottom -->
+<div class="flex p-5 sm:p-0 flex-wrap py-3">
+  <!-- card -->
+  <div class="w-full md:w-1/3 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+    <img class="w-10" src="./images/icon.png" alt="icon">
+    <h1 class="font-medium text-lg  dark:text-white">Responsive Web Development</h1>
+    <p class="text-gray-400">I build clean, modern websites using HTML, CSS, and JavaScript that look great on all screen sizes—from mobile to desktop.</p>
+    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+  </div>
+  
+  <!-- Service Card 2 -->
+  <div class="w-full md:w-1/3 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+    <img class="w-10" src="./images/icon.png" alt="icon">
+    <h1 class="font-medium text-lg  dark:text-white">Frontend Engineering</h1>
+    <p class="text-gray-400">From layout to animations, I create intuitive user interfaces with attention to design, usability, and accessibility.</p>
+    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+  </div>
+  
+  <!-- Service Card 3 -->
+  <div class="w-full md:w-1/3 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+    <img class="w-10" src="./images/icon.png" alt="icon">
+    <h1 class="font-medium text-lg  dark:text-white">Backend Development (Learning)</h1>
+    <p class="text-gray-400">Currently learning backend technologies like Node.js and Express to build secure and scalable web apps from end to end.</p>
+    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+ 
+  </div>
+<!-- contact -->
+ 
+  <div id="contact" class="container mx-auto px-10 mt-16  dark:bg-slate-900">
+    <!-- top -->
+    <div class="flex flex-col gap-3 items-center mb-10">
+      <h1 class="text-indigo-600 font-bold ">Contact</h1>
+      <h1 class="text-3xl  dark:text-white">Have a question?</h1>
+      <p class="text-gray-400 w-full md:w-1/2 text-center">Do you have an idea? Let's discuss it and see what we can do together.</p>
+    </div>
+    <!-- bottom -->
+    <!-- Form Section - Now properly centered -->
+    <div class="flex justify-center ">
+      <form class="flex flex-col gap-5 w-full max-w-xl" action="">
+        <!-- form inputs -->
+        <input
+        class="p-2 w-full ring-1 ring-indigo-300 rounded-sm  dark:bg-slate-800 dark:ring-0 dark:text-white"
+        type="text"
+        placeholder="Name Surname"
+        required
+      />
+      <input
+        class="p-2 w-full ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+        type="email"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        class="p-2 w-full ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+        rows="10"
+        placeholder="Message..."
+        required
+      ></textarea>
+      <button
+        class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md mx-auto"
+        type="submit"
+      >
+        Submit
+      </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="w-full bg-gray-700 mt-5">
+    <div
+      class="max-w-7xl mx-auto py-2 flex justify-between"
+    >
+      <div class="flex items-center">
+        <img
+          class="top-0 w-10 h-16 object-contain"
+          src="./images/drago-Photoroom.png"
+          alt="logo"
+        />
+        <span class="text-lg font-bold text-white">Drago.</span>
+      </div>
+      <span class="font-medium text-white flex items-center">© Drago 2025 </span>
+      <div class="flex gap-4">
+        <img class="w-4 cursor-pointer object-contain" src="./images/facebook.png" alt="">
+        <img class="w-4 cursor-pointer object-contain" src="./images/instagram.png" alt="">
+        <img class="w-4 cursor-pointer object-contain" src="./images/linkedin.png" alt="">
+      </div>
+      
+    </div>
+  </div>
+
+      <script src="./app.js"></script>
+      <script src="./autotyping.js"></script>
+      </body>
+     </html>
